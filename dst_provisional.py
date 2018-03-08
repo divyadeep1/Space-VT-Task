@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Mar  7 22:32:58 2018
+Created on Thu Mar  8 20:23:01 2018
 
 @author: divyadeep
 """
 
-#Scrape data from website "wdc.kugi.kyoto-u.ac.jp/dst_final/{year-month}"
+#Scrape data from website "wdc.kugi.kyoto-u.ac.jp/dst_provisional/{year-month}"
 
 from bs4 import BeautifulSoup as bs
 import urllib.request
@@ -34,8 +34,8 @@ def correct(data):
     return data
 
 #Basic definitions.
-base_url = "http://wdc.kugi.kyoto-u.ac.jp/dst_final/"
-years = range(1957, 2014)
+base_url = "http://wdc.kugi.kyoto-u.ac.jp/dst_provisional/"
+years = [2014,2015]
 months = ['01','02','03','04','05','06','07','08','09','10','11','12']
 
 #Connecting to the table created in dst_real_time.
