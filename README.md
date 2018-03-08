@@ -6,7 +6,7 @@ The task has been divided into 3 scripts, that scrape the 3 kinds of dst index p
 
 The following libraries have been used in this task:-
   1. urllib - To request each webpage where DST data is written.
-  2. BeautifulSoup - To parse the webpage and extract the data (contained in a <pre> element) from the obrained page.
+  2. BeautifulSoup - To parse the webpage and extract the data (contained in a pre element) from the obtained page.
   3. sqlite3 - To write the data to the database.
   
 Any database browsing tool, like 'DB browser for SQLITE', can be used to access the data stored in 'dst.db' database.
